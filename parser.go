@@ -621,6 +621,10 @@ func (v *Value) String() string {
 	return b2s(b)
 }
 
+func (v *Value) Bytes() []byte {
+	return s2b(v.s)
+}
+
 // Type represents JSON type.
 type Type int
 
